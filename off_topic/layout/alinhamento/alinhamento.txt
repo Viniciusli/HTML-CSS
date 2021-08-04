@@ -1,0 +1,58 @@
+# GRID: ALINHAMENTOS
+  Existem 6 propiedades de alinhamento:
+  1. justify-content
+  2. align-content
+  3. justify-items
+  4. align-items
+  5. justify-self
+  6. align-self
+
+  Vamos dividi-los em 2 grupos:
+  1. justify e align
+  2. content, items e self
+
+## JUSTIFY E ALIGN
+
+  Sabendo que o grid é bidimencional, temos os eixos x e y.
+  o eixo X é o eixo horizontal , da esquerda para a direita.
+  o eixo Y é o eixo vertical , de cima para baixo.
+
+## CONTENT, ITEMS E SELF
+
+  juntando o justify ou align com o content, items e self, temos
+  nossas propiedades.
+
+### CONTENT 
+
+  justify-content e align-content nos permite alinhar o própio grid
+  relativo ao espaço fora do grid.
+  O uso dessas propiedades são raras, pois só é aplicado caso o grid
+  seja menor que a área definida.
+  (Por exemplo, quando usamos em px o tamanho do grid, poderemos
+  terminar com um grid pequeno para o tamanho da área do grid),
+
+  Podemos usar 7 valores para esse alinhamento:
+  1. start
+  2. end
+  3. center
+  4. stretch
+  5. space-between
+  6. space-around
+  7. space-evenly
+
+### ITEMS
+
+  justify-items e align-items, vai permitir alinhar os itens do nosso
+  grid, em qualquer espaço disponível, na célular que ele habitar.
+
+  Podemos usar 4 valores: 
+  1. start
+  2. end
+  3. center
+  4. stretch
+
+### SELF
+
+  justify-self e align-self, nos permite alinhar o item em si.
+  faz a mesma coisa que o justify-items e align-items, porém,
+  aplicado diretamente no item de um grid.

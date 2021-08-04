@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* caso haja problemas com acentuação*/
+
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    color: lightseagreen;
+
+}
+
+h2 {
+    color: maroon;
+}
+
+p {
+    text-align: justify;
+}
+
+a:link {
+    color: rgb(102, 108, 102);
+    text-decoration: none;
+}
+a:visited {
+    color: maroon;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(25, 158, 25);
+    text-decoration: none;
+}
+a:active {
+    color: greenyellow;
+    text-decoration: none;
+}

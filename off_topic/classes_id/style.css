@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: url('https://super.abril.com.br/wp-content/uploads/2016/10/super_imgas_25_cidades_mais_tecnologicas_do_mundo_em_2016_-_sao_francisco_0_0.jpg');
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.cidades {
+    padding: 30px;
+    color:white;
+}
+#londres {
+    color: teal;
+}
+#paris {
+    color: turquoise;
+}
+#tokyo {
+    color: violet;
+}

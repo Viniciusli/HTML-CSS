@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora</title>
+</head>
+<body>
+    <h1>Primeiro JavaScript com HTML</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Clique aqui para mostrar data e hora.</button>
+    <p id="demo"></p>
+
+    <h1>JavaScript pode mudar o conteúdo de tags:</h1>
+    <p id="demo2">Conteúdo antes de ser alterado</p>
+    <button type="button" onclick="mudarConteudo()">
+        Clique para alterar o conteúdo
+    </button>
+
+    <h1>JavaScript pode mudar o estilo de elementos HTMls</h1>
+    <p id="demo3">elemento não alterado</p>
+    <button type="button" onclick="mudarEstilo()">
+        Clique para alterar o estilo
+    </button>
+
+    <script>
+        function mudarConteudo() {
+            document.getElementById('demo2').innerHTML = "Conteúdo alterado";
+        }
+        function mudarEstilo() {
+            document.getElementById('demo3').innerHTML = "elemento e estilo alterados"
+            document.getElementById('demo3').style.fontFamily = "Arial"
+            document.getElementById('demo3').style.color = "yellow"
+            document.getElementById('demo3').style.backgroundColor = "black"
+        }
+    </script>
+</body>
+</html>

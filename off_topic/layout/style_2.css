@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+body {
+  background-color: #f1f1f1;
+}
+
+.container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #7259c1;
+}
+
+.container {
+  display: grid;
+  /* duas colunas 3fr: 3/4; 1fr: 1/4*/
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 20vh 70vh 10vh;
+  /*vamos usar o grid-template-areas para fazer o trabalho
+   do grid-column e do grid-row.
+   * é como se o template areas desse nome às areas
+   * podemos usar qualquer nome para simbolizar as áreas
+   * vamos usar os nomes header, aside...*/
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+}
+
+header {
+  background-color: yellow;
+  /*2 colunas divididas em 3 "linhas verticais" imaginárias
+    abaixo: começa na linha 1 e termina na 3
+  grid-column: 1/3;
+  /*3 colunas divididas em 4 "linhas horizontais" imaginárias
+    abaixo: começa na linha 3 e termina na 4
+  grid-row: 3/4;
+  --agora vamos fazer este mesmo processo usando o grid-areas*/
+  grid-area: header;
+}
+main {
+  background-color: teal;
+  grid-area: main;
+}
+aside {
+  background-color: brown;
+  grid-area: aside;
+}
+footer {
+  background-color: darkgreen;
+  grid-area: footer;
+}

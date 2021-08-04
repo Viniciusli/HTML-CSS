@@ -1,0 +1,164 @@
+* SYNTAX
+       h1      {color:     blue;} 
+    seletor   propiedade   valor
+
+* SELETORES
+    ** nome do seletor. EX.: p{color:red;}
+    ** #id {}
+    ** .class {}
+    ** * {} seleciona todos elementos do HTML
+
+* COMENTÁRIOS
+    <!--comentário-->
+
+* CORES
+    ** nome da cor
+    ** RGB (red, green, blue).
+        vai de rgb(0, 0, 0) a rgb(255, 255, 255)
+    **HEX (rrbbgg)
+        de (000000) a (ffffff)
+    **HSL (hue, saturation, lightness)
+        de (0, 0%, 0%) a (240, 100%, 100%)
+
+* BACKGROUNDS
+    ** background-color: cor(nome, rgb, hex ou hsl)
+        vc pode usar o opacity: (0.1 a 1); para opacidade
+
+    ** background-image: url();
+    ** background-repeat: (no-repeat, repeat-y, repeat-x);
+    ** background-position: ();
+    ** background-attachment: (fixed, scroll);
+    ** background: (color, image, repeat, attachment, position);
+
+* BORDERS
+    ** border-style: (
+        doted, dashed, solid, double,
+        groove, ridge, inset, outset,
+        none, hidden, (mixed what u want)
+    )
+
+    ** border-width: value;
+    ** border-color: value;
+    ** shorthand
+        ex: border: 5px, solid red;
+        ex: border-(left, bottom, top, right): red;
+    ** border-radios: px;
+
+* MARGINS
+    ** margin-top: (auto, px, %, vw, vh);
+    ** margin-right: (auto, px, %, vw, vh);
+    ** margin-left: (auto, px, %, vw, vh);
+    ** margin-bottom: (auto, px, %, vw, vh);
+    ** shorthand
+        EX.: margin: 5px, 12px, 100px, 75px
+                     top  rigth  left   bottom
+            margin: 25px; (all margins are 25px)
+
+* PADDING: distancia da borda para o conteúdo != margin
+    **padding-top: (auto, px, %, vw, vh);
+      padding-right: (auto, px, %, vw, vh);
+      padding-left: (auto, px, %, vw, vh);
+      padding-bottom: (auto, px, %, vw, vh);
+    ** shorthand funciona da mesma forma do margin
+
+* WIDTH HEIGHT 
+* MAX-WIDTH MIN-HEIGHT
+* BOX-MODEL: de forma porca, é a soma do width+height+(left+right padding)+
+    (left+right border)+(left+right margin)
+
+*OUTLINE
+    ** outline-style:
+        *** dotted, dashed, solid, double,
+            groove, ridge, inset, outset,
+            none, hidden.
+    ** outline-color:
+        *** além das propiedades de cor que já vimos,
+            tem o invert.
+    ** outline-width:
+        *** thin: 1px;
+        *** medium: 3px;
+        *** thick: 5px;
+        *** ou outro específico.
+    ** outline-offset: adiciona um espaço entre o outline e a borda
+    ** outline: dashed (exemplo)
+
+* TEXT
+    ** COLOR / BACKGROUND-COLOR:
+        use no seleto. EX.:
+        h1 {
+            background-color: blue;
+            color: red;
+        }
+    ** TEXT-ALIGN
+        *** center, left, right, justify
+    ** VERTICAL-ALIGN:
+        *** top, middle, bottom.
+    
+    ** TEXT-DECORATION:
+        *** none (defaut)
+        *** line-through
+        *** underline
+    ** TEXT-TRANSFORMATION:
+        *** uppercase
+        *** lowercase
+        *** capitalize
+    ** TEXT-INDENT: px;
+        deixa um espaço especificado pelo px, no inicio de paragrafo
+    ** LETTER-SPACING: px;
+        espaços entre letras
+    ** LINE-HEIGHT: 0.1(ex)
+        define espaço entre linhas
+    ** WORD-SPACE: px;
+        define espaço entre palavras
+    ** TEXT-SHADOW: px px;
+        coloca sombra no texto
+        precisa especificar 2 PXs, um horizontal e outro vertical
+        text-shadow: px px px cor;
+            o terceiro px especifica o borrado
+
+*FONTS
+    ** FONT-FAMILY: value;
+    ** WEB SAFE FONTS:
+        Fontes aceitas em todos navegadores:
+            *** arial, verdana, helvetica, trahoma,
+                trebuchet, trebuchet MS, TimeNR, georgia,
+                garamond, courier new, brush script MT.
+    
+    ** FALLBACKS
+        *** serif, sans-serif, monospace, cursive, fantasy
+
+    ** FONT-STYLE:
+        *** normal
+        *** italic
+        *** oblique
+    ** FONT-WEIGHT:
+    ** FONT-VARIANT: small-caps
+
+    ** FONT-SIZE: 
+        *** px
+        *** em (relacionado a um master)
+        *** rem (relacionado a outro tbm)
+        *** vw
+
+    ** FONT PAIRINGS: se vc quiser colocar uma fonte no paragrafo e outra
+       diferente no h1, pode usar a fonte do paragrafo no body{}
+       e a do h1 no h1{}
+            headings / text
+        *** georgia / verdana
+        *** helvetica / garamond
+            fonts do google fonts
+        *** merryweather / open sans
+        *** ubuntu / lora
+        *** april fatface / poppins
+        *** cinzel / fauna one
+        *** space mono / muli
+        *** qualquer outro pesquisa seu preguiçoso
+
+* LINKS
+    ** a:link; ainda não visitado
+    ** a:visited; 
+    ** a:hover; mouse em cima do link e deve ficar dps dos acima
+    ** a:active deve ficar abaixo dos acima
+    *** text-decoration
+    *** background-color
+* CURSOR: ;

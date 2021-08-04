@@ -1,0 +1,128 @@
+<!--form elements:
+        <form> 	    Defines an HTML form for user input
+        <input> 	Defines an input control
+        <textarea> 	Defines a multiline input control (text area)
+        <label> 	Defines a label for an <input> element
+        <fieldset> 	Groups related elements in a form
+        <legend> 	Defines a caption for a <fieldset> element
+        <select> 	Defines a drop-down list
+        <optgroup> 	Defines a group of related options in a drop-down list
+        <option> 	Defines an option in a drop-down list
+        <button> 	Defines a clickable button
+        <datalist> 	Specifies a list of pre-defined options for input controls
+        <output> 	Defines the result of a calculation
+  
+    --input atributes:
+        value=""    specifies a initial value for a input field
+        readonly    specifies that an input field cannot be changed
+        disabled    specifies that an input field is unusable and un-clickable
+        size=""     specifies the visible width
+        min and max
+        multiple    specifies that the user can enter more then one value
+        pattern     specifies a regular expression that the input field's value is checked against, when the form is submitted.
+        placeholder
+        required    specifies that an input field must be filled out
+        step=""     specifies a number interval
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+    <!--Tipos de input:
+        * text
+        * radio-->
+    <h2>Input type="text"</h2>
+    <form action="#">
+        <label for="pnome">Nome</label><br>
+        <input type="text" id="pnome" name="pnome" value=""><br>
+        <label for="snome">Sobrenome</label><br>
+        <input type="text" id="snome" name="snome" value=""><br>
+        <!--o atributo for do label deve ser o mesmo que o id do input-->
+    </form>
+
+    <h2>Input type="radio"</h2>
+    <form action="#">
+        <input type="radio" id="feminino" name="genero">
+        <label for="feminino">Feminino</label><br>
+        <input type="radio" id="masculino" name="genero">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" name="genero" id="outro">
+        <label for="outro">Outro</label>
+    </form>
+
+    <h2>Input type="checkbox"</h2>
+    <form action="#">
+        <input type="checkbox" name="veiculo1" id="veiculo1" value="bike">
+        <label for="veiculo1">Eu tenho uma bicicleta</label><br>
+        <input type="checkbox" name="veiculo2" id="veiculo2" value="carro">
+        <label for="veiculo2">Eu tenho um carro</label><br>
+        <input type="checkbox" name="veiculo3" id="veiculo3" value="barco">
+        <label for="veiculo3">Eu tenho um barco</label><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>select</h2>
+    <form action="#">
+        <label for="escuderias">Escolha uma escuderia de F1:</label>
+        <select name="escuderias" id="escuderias">
+            <option value="mercedes">Mercedes</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="rbr">Red Bull Racing</option>
+            <option value="mclaren">McLaren</option>
+            <option value="alphatauri">AlphaTauri</option>
+        </select>
+        <input type="submit" value="Enviar resposta">
+    </form>
+
+    <h2>Text area</h2>
+    <form action="#">
+        <label for="coments">Comentários:</label><br>
+        <textarea name="coments" id="coments" cols="30" rows="10"></textarea>
+    </form>
+
+    <h2>button</h2>
+    <button type="button" onclick="alert('Olá!')">clique aqui</button>
+
+    <h2>fieldset</h2>
+    <form action="#">
+        <fieldset style="border-color: crimson; width: 55px;">
+            <legend>Perfil</legend>
+            <label for="pnome">Nome</label><br>
+            <input type="text" id="pnome" name="pnome" value=""><br>
+            <label for="snome">Sobrenome</label><br>
+            <input type="text" id="snome" name="snome" value=""><br>
+        </fieldset>
+    </form>
+
+    <h2>datalist</h2>
+    <form action="#">
+        <input name="browsers" list="browsers">
+        <datalist id="browsers">
+            <option value="mozila">Mozila Firefox</option>
+            <option value="explorer">Internet Explorer</option>
+            <option value="chrome">Chrome</option>
+            <option value="opera">Opera</option>
+            <option value="safari">Safari</option>
+        </datalist>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Output</h2>
+    <form action="#"
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" name="a" id="a" value="50">
+    100 +
+    <input type="number" name="b" id="b" value="50">
+    =
+    <output name="x" for="a b">100  </output><br>
+    </form>
+</body>
+</html>

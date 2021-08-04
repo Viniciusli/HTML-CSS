@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lâmpada</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="texto">Abaixo o JavaScript irá altera o src da imagem</h1>
+        <img id="imagem" src="imagens/pic_bulboff.gif" alt="lampada apagada"><br>
+        <button type="button" onclick="luz(0)">Acender</button>
+        <button type="button" onclick="luz(1)">Apagar</button>
+    </div>
+
+    <script>
+        function luz(n) {
+            var foto, cor, contraste;
+            if (n == 0) {
+                foto = "imagens/pic_bulbon.gif"
+                cor = "#ffffff";
+                contraste = "#333333";
+            } else {
+                foto = "imagens/pic_bulboff.gif"
+                cor = "#333333";
+                contraste = "#ffffff"
+            }
+            document.getElementById('imagem').src = foto;
+            document.body.style.backgroundColor = cor;
+            document.getElementById('texto').style.color = contraste;
+        }
+    </script>
+</body>
+</html>
